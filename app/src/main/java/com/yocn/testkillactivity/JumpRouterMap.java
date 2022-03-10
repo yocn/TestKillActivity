@@ -10,16 +10,7 @@ class JumpRouterMap {
     public static LinkedList<Class<? extends BaseActivity>> jumpList1 = new LinkedList<>();
 
     static {
-        jumpList0.add(Activity1.class);
-        jumpList0.add(Activity2.class);
-        jumpList0.add(Activity3.class);
-        jumpList0.add(Activity4.class);
-        jumpList0.add(Activity5.class);
-        jumpList0.add(Activity6.class);
-        jumpList0.add(Activity7.class);
-        jumpList0.add(Activity8.class);
-        jumpList0.add(Activity9.class);
-        jumpList0.add(Activity10.class);
+        jumpList0.add(BaseActivity.class);
 
         jumpList1.add(ActivityStandard.class);
         jumpList1.add(ActivityStandard.class);

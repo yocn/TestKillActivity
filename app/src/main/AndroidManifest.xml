@@ -21,34 +21,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Activity1"
-            android:launchMode="standard" />
-        <activity
-            android:name=".Activity2"
-            android:launchMode="standard" />
-        <activity
-            android:name=".Activity3"
-            android:launchMode="standard" />
-        <activity
-            android:name=".Activity4"
-            android:launchMode="standard" />
-        <activity
-            android:name=".Activity5"
-            android:launchMode="standard" />
-        <activity
-            android:name=".Activity6"
-            android:launchMode="standard" />
-        <activity
-            android:name=".Activity7"
-            android:launchMode="standard" />
-        <activity
-            android:name=".Activity8"
-            android:launchMode="standard" />
-        <activity
-            android:name=".Activity9"
-            android:launchMode="standard" />
-        <activity
-            android:name=".Activity10"
+            android:name=".BaseActivity"
             android:launchMode="standard" />
         <activity
             android:name=".ActivityStandard"

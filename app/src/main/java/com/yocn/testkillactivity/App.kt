@@ -10,8 +10,13 @@ class App : Application() {
     var totalNums = 0
     var currNums = 0
 
+    companion object {
+        lateinit var mInstance: App
+    }
+
     override fun onCreate() {
         super.onCreate()
+        mInstance = this
         registerActivityLifecycleCallbacks(object : ActivityLifecycleCallbacks {
             override fun onActivityCreated(activity: Activity, savedInstanceState: Bundle?) {
                 list.add(activity)
@@ -45,7 +50,8 @@ class App : Application() {
 
     fun print(add: Boolean, name: String) {
         val sb = StringBuilder()
-        sb.append("一共打开过").append(totalNums).append("个Activity 存活").append(currNums).append("个 - ").append(name).append(" ").append(if (add) "added" else "removed").append(" [")
+        sb.append("一共打开过").append(totalNums).append("个Activity 存活").append(currNums).append("个 - ")
+            .append(name).append(" ").append(if (add) "added" else "removed").append(" [")
         for (a in list) {
             sb.append(a::class.java.simpleName).append(" ")
         }
